@@ -1,3 +1,6 @@
+项目地址：http://47.107.66.238:8011/#/login
+
+
 # 管理平台前端框架
 
 ## 安装和运行
@@ -49,3 +52,5 @@ yarn run lint
   - FontAwesome: https://fontawesome.com/icons?d=gallery&m=free
   
     > 一套绝佳的图标字体库和CSS框架
+    
+    
