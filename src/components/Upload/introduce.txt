@@ -1,0 +1,16 @@
+图片上传
+
+    data 数据 组件UploadItem所需
+        [{ id: 0, border: true, url: '' },{ id: 1, border: true, url: '' }]
+        id 为引索，必须以0开始
+        border为是否显示上传按钮
+        url 图片url路径
+
+
+    url 图片url路径
+    icon: 自定义图标
+    title: 自定义文字
+    disableImg: 组件点击 true/false
+
+
+success emit 返回id 和数据 id在UploadItem存在

@@ -1,0 +1,233 @@
+/* 列表页布局 */
+.container {
+  width: 95%;
+  margin: auto;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 1px 1px 12px rgba(153, 153, 153, 0.21);
+
+  .search {
+    padding-bottom: 20px;
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .search-left {
+        float: left;
+
+      &:after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+    }
+    .search-right {
+        float: right;
+    }
+    .search-isShow {
+      padding-top:20px;
+      .el-form{
+        width: 100%;
+        & > div {
+          box-sizing: padding-box;
+          margin-left: 5px;
+          float: left;
+        }
+        .el-checkbox {
+          margin-right: 10px;
+        }
+        & > div:nth-child(2) {
+          margin-left:10px;
+          .level,.dateSelect {
+            .el-input, .el-input--mini {
+              width: 123px!important;
+            }
+            /*.el-input--mini .el-input__icon {
+              display: none;
+            }*/
+            /*.el-input--prefix .el-input__inner {
+              padding-left: 14px;
+              padding-right: 14px;
+            }*/
+            span{
+              margin-right:10px;
+            }
+          }
+        }
+        & > div:nth-child(3){
+          margin-left: -10px;
+          .company, .question {
+            .el-input, .el-input--mini {
+              width: 210px!important;
+            }
+          }
+        }
+
+        .btn{
+          width:5%;
+          margin-top:48px;
+        }
+        &:after {
+          content: '';
+          display: block;
+          clear: both;
+        }
+      }
+    }
+    .el-button.el-button--mini,.el-button.el-button--medium {
+      margin-right: 10px;
+    }
+    .el-input.el-input--mini,.el-input.el-input--medium {
+        width: 160px;
+        margin-right: 10px;
+    }
+    .el-select.el-select--mini {
+        width: 120px;
+        margin-right: 10px;
+      .el-input.el-input--mini,.el-input.el-input--medium {
+        width: 100%;
+      }
+    }
+  }
+  .table {
+
+  }
+  .pagination {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    float: right;
+  }
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+/* 主体内容修复 */
+.el-main {
+  padding: 0;
+  overflow: auto;
+}
+
+/* dialog高度修复 */
+.consume .el-dialog__body {
+  padding: 10px 20px;
+}
+
+/* 列表详情页布局 */
+#bg {
+  position: relative;
+  height: 100%;
+}
+
+.drawer-background {
+  position: fixed;
+  top: 78px;
+  left: 201px;
+  right: 0;
+  bottom: 0;
+  width: calc(100% - 201px);
+  height: 100%;
+  background:rgba(0,0,0,.3);
+  z-index: 10;
+
+  .drawer {
+    .drawer-container {
+      position: absolute;
+      right: 0;
+      width: 80%;
+      height:calc(100% - 78px);
+      background: #fff;
+      z-index: 11;
+      box-shadow: 1px 2px 20px rgba(255, 255, 255, 0.61);
+      overflow: auto;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+  }
+}
+
+.addTag{
+  .el-tag--mini,.el-tag + .el-tag {
+    margin-right: 10px;
+    height: 28px!important;
+    line-height: 26px!important;
+  }
+  .button-new-tag {
+    margin-right: 10px;
+    width: 90px!important;
+    height: 28px!important;
+    line-height: 26px!important;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .input-new-tag {
+    width: 90px!important;
+    height: 28px!important;
+    line-height: 26px!important;
+  }
+}
+
+/* 上传组件 */
+  /* 进度条中间文字颜色 */
+  .progress .el-progress__text {
+    color: #fff;
+  }
+
+  /* 宽度控制 */
+  .file-upload .el-upload.el-upload--text {
+    width: 100%;
+    .el-upload-dragger {
+      width: 100%;
+      height: 180px!important;
+    }
+    .avatar-height {
+      height: 180px!important;
+    }
+  }
+
+  /* 上传删除动画 */
+  .avatar-hover {
+    &:hover .avatar-slot {
+      opacity: .8!important;
+      .upload-del {
+        transform: translate(50%, -50%) rotate(360deg) !important;
+      }
+    }
+  }
+
+  /*drawer页面表单样式*/
+  .form {
+    width: 92%;
+    .area .el-select .el-input.el-input--mini.el-input--suffix {
+      width: 120px;
+      margin-right:20px;
+    }
+    .area2 .el-select .el-input.el-input--mini.el-input--suffix {
+      width: 190px;
+      margin-right:20px;
+    }
+    .el-textarea.el-input--mini{
+      width:400px;
+    }
+    .editStatus {
+      float: left;
+      margin-right:80px;
+    }
+    .status {
+      float: left;
+      .el-select .el-input.el-input--mini.el-input--suffix {
+        width: 160px;
+      }
+    }
+  }
+
+  .bottom {
+    text-align: right;
+    .bt{
+      width: 100px;
+    }
+  }
+

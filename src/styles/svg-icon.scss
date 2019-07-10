@@ -1,0 +1,37 @@
+@import './config';
+
+/* 宽高控制 需要加入 !important */
+.icon-add {
+   /* width: 10em!important;
+    height: 10em!important;*/
+}
+
+.menu-svg {
+  width: 20px!important;
+  height: 20px!important;
+  margin-right: 10px;
+  transform: translateY(5px);
+}
+
+/* 上传删除样式 */
+.upload-del {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%) rotate(0deg);
+  width: 100px!important;
+  height: 100px!important;
+  padding: 20px 10px ;
+  transition: transform .5s;
+  //border: 1px dashed #d9d9d9;
+  //background: #fff;
+}
+
+/* 上传logo样式 */
+.avatar-uploader-bg .svg-class {
+  color: rgb(166, 169, 173)!important;
+  width: 10em!important;
+  height: 10em!important;
+  padding: 20px 10px;
+}
